@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staffs Status</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./jquery.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <style></style>
+  </head>
+  <style>
+    .profile__ {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .dp__ {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: rgba(219, 218, 219, 0.88);
+      overflow: hidden;
+    }
+    .facultys__data {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+      padding-top: 10px;
+    }
+    .faculty__name_,
+    .faculty__details_ {
+      text-align: center;
+    }
+    .faculty__details_ {
+      font-size: 18px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <header>
+        <div class="title">
+          <h3>Staffs Status ECE</h3>
+          <div class="icons">
+            <div class="theme">
+              <i class="fa-solid fa-moon" style="color: #ffffff"></i>
+              <i class="fa-solid fa-sun" style="color: #ffffff"></i>
+            </div>
+            <div class="bar">
+              <i class="fa-solid fa-bars" style="color: #ffffff"></i>
+            </div>
+          </div>
+        </div>
+        <div class="search__bar">
+          <input type="text" placeholder="Search Staffs" />
+        </div>
+      </header>
+      <div class="facultys__list"></div>
+      <div class="next__page">
+        
+      </div>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".theme").click(function () {
+          $(".container").toggleClass("dark");
+        });
+      });
+    </script>
+    
+  </body>
+</html>
