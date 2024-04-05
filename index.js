@@ -36,7 +36,7 @@ profileList.forEach((faculty) => {
               <h2 class="faculty__name_">${staff.name.title} ${staff.name.first} ${staff.name.last}</h2>
               <p class="faculty__details_">${staff.email}</p>
               <p class="faculty__details_"></p>
-              <p class="faculty__details_">2nd floor dsp lab</p>
+              <p class="faculty__details_">2nd floor faculty room</p>
             </div>
           </div><div class="timetable">
           <table border="1px">
