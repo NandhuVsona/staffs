@@ -144,8 +144,9 @@ tr>th{
 }
 section p{
   text-align:center;
-  margin:2px;
+  margin:5px;
+  color:red;
 }
 section{
-margin-top:5px;
+margin-top:10px;
 }
