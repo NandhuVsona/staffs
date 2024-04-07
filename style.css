@@ -142,3 +142,6 @@ tr>th{
 .next__page.hide{
   display: none;
 }
+section p{
+  text-align:center;
+}
