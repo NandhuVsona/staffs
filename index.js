@@ -106,6 +106,10 @@ profileList.forEach((faculty) => {
               <td></td>
             </tr>
           </table>
+           <section>
+          <p><b>A</b> Section Hall No : <b>311</b></p>
+          <p><b>B</b> Section Hall No : <b>312</b></p>
+        </section>
         </div>
         <div class="btns">
           <a href=""><button class="emil">Message</button></a>
