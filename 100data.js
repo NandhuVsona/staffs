@@ -5,6 +5,7 @@ let results = [
       first: "Sharmila",
       last: "Devi",
     },
+    destination: 'Assistant professor',
     location: {
       street: {},
     },
@@ -24,6 +25,7 @@ let results = [
       first: "Jamuna",
       last: "Rani",
     },
+    destination: 'Associate professor',
     location: {
       street: {},
     },
