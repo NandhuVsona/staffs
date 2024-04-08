@@ -10,7 +10,7 @@ results.forEach((user) => {
         </div>
         <div class="details">
           <h4 class="faculty__name">${user.name.title} ${user.name.first} ${user.name.last}</h4>
-          <p class="faculty__details">ECE Faculty</p>
+          <p class="faculty__details">${user.destination}</p>
         </div>
       </div>`;
 
@@ -28,6 +28,9 @@ profileList.forEach((faculty) => {
     
     nextPage.innerHTML = `
     <div class="facultys__data">
+    <div class="backward gobackbtn">
+    <i class="fa-solid fa-circle-arrow-left"></i>
+  </div>
           <div class="profile__">
             <div class="dp__">
               <img src="${staff.picture.medium}" alt="" />
@@ -36,12 +39,17 @@ profileList.forEach((faculty) => {
               <h2 class="faculty__name_">${staff.name.title} ${staff.name.first} ${staff.name.last}</h2>
               <p class="faculty__details_">${staff.email}</p>
               <p class="faculty__details_"></p>
-              <p class="faculty__details_">2nd floor faculty room</p>
+              <p class="faculty__details_">Location : ECE dept 2<sup>nd</sup> floor</p>
             </div>
-          </div><div class="timetable">
+          </div>
+          <div class="contact">
+        <a href="https://wa.me/+919600533113?text="><button class="emil"><i class="fa-regular fa-envelope"></i> Message</button></a>
+      <a href="tel:9600533113"><button class="call" ><i class="fa-solid fa-phone"></i> Phone</button></a>
+      </div>
+          <div class="timetable">
           <table border="1px">
             <tr>
-              <th id="out"></th>
+              <th></th>
               <th>1</th>
               <th>2</th>
               <th>3</th>
@@ -106,22 +114,21 @@ profileList.forEach((faculty) => {
               <td></td>
             </tr>
           </table>
-           <section>
-          <p><b>A</b> Section Hall No : <b>311</b></p>
-          <p><b>B</b> Section Hall No : <b>312</b></p>
-        </section>
+         
         </div>
-        <div class="btns">
-          <a href="https://wa.me/+919600533113?text="><button class="emil">Message</button></a>
-          <button class="back">Go Back</button>
+        <div class="backbtn">
+          <button class="back backward">Back</button>
         </div>
 
-        </div>`;
+        </div>
+       `;
 
-      let backbtn = document.querySelector('.back')
-      backbtn.addEventListener('click',()=>{
+      let backbtn = document.querySelectorAll('.backward')
+     backbtn.forEach(btn =>{
+      btn.addEventListener('click',()=>{
         root.style.display = 'block'
         nextPage.style.display = 'none'
       })
+     })
   });
 });
