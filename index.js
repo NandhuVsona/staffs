@@ -112,7 +112,7 @@ profileList.forEach((faculty) => {
         </section>
         </div>
         <div class="btns">
-          <a href=""><button class="emil">Message</button></a>
+          <a href="https://wa.link/ojtvex"><button class="emil">Message</button></a>
           <button class="back">Go Back</button>
         </div>
 
