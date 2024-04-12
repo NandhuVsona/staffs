@@ -125,18 +125,33 @@ button {
 }
 table {
   border-collapse: collapse;
+  width: 500px;
+}
+.timetable {
+  width: 380px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  text-align: center;
 }
 td,
 th {
-  padding: 7px 16px;
+  padding: 5px 10px;
+}
+tr {
+  width: 350px;
+  height: 60px;
 }
 .day {
+ 
   background-color: rgb(208, 216, 230);
 }
 tr > th {
+  width: 350px;
+  height: 60px;
   background-color: rgb(208, 216, 230);
 }
 #out {
+ 
   background-color: transparent;
 }
 .next__page.hide {
@@ -148,7 +163,7 @@ section p {
 .call {
   background-color: rgb(36, 162, 246);
 }
-.gobackbtn{
+.gobackbtn {
   position: absolute;
   top: 15px;
   left: 15px;
@@ -156,7 +171,7 @@ section p {
 .backward i {
   font-size: 30px;
 }
-.facultys__data{
+.facultys__data {
   position: relative;
 }
 .btns {
