@@ -60,10 +60,10 @@ profileList.forEach((faculty) => {
             </tr>
             <tr>
               <td  class="day">Mon</td>
-              <td>A</td>
+              <td>CSE A 311</td>
               <td></td>
               <td></td>
-              <td>B</td>
+              <td>CSE B 312</td>
               <td></td>
               <td></td>
               <td></td>
@@ -71,9 +71,9 @@ profileList.forEach((faculty) => {
             <tr>
               <td class="day">Tue</td>
               <td></td>
-              <td>B</td>
+              <td>CSE B 312</td>
               <td></td>
-              <td>A</td>
+              <td>CSE A 311</td>
               <td></td>
               <td></td>
               <td></td>
@@ -83,12 +83,12 @@ profileList.forEach((faculty) => {
               <td colspan="4" style="text-align: center;">LIC</td>
               <td></td>
               <td></td>
-              <td>A</td>
+              <td>CSE A 311</td>
             </tr>
             <tr>
               <td class="day">Thu</td>
               <td></td>
-              <td>B</td>
+              <td>CSE B 312</td>
               <td></td>
               <td></td>
               <td colspan="3" style="text-align: center;">EDC</td>
@@ -99,16 +99,16 @@ profileList.forEach((faculty) => {
               <td></td>
               <td></td>
               <td></td>
-              <td>B</td>
+              <td>CSE B 312</td>
               <td colspan="3" style="text-align: center;">EMB</td>
              
             </tr>
             <tr>
               <td class="day">Sat</td>
               <td></td>
-              <td>B</td>
+              <td>CSE B 312</td>
               <td></td>
-              <td>A</td>
+              <td>CSE A 311</td>
               <td></td>
               <td></td>
               <td></td>
