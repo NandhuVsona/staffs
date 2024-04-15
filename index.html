@@ -19,111 +19,7 @@
     />
     <script src="./jquery.js"></script>
     <link rel="stylesheet" href="./style.css" />
-    <style></style>
   </head>
-  <style>
-    .profile__ {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      gap: 15px;
-      width: 100%;
-    }
-    img {
-      width: 100%;
-      object-fit: cover;
-      object-position: center;
-    }
-    .dp__ {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      background-color: rgba(219, 218, 219, 0.88);
-      overflow: hidden;
-    }
-    .facultys__data {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      justify-content: center;
-      align-items: center;
-      padding-top: 10px;
-    }
-    .faculty__name_,
-    .faculty__details_ {
-      text-align: center;
-    }
-    .faculty__details_ {
-      font-size: 18px;
-    }
-
-    .loginpage {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      position: relative;
-      flex-direction: column;
-    }
-    form {
-      width: 100%;
-      padding: 30px;
-      font-size: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .name,
-    .password {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-    label {
-      font-size: 16px;
-      margin-bottom: 10px;
-      margin-left: 10px;
-      font-weight: bold;
-    }
-    input,
-    .loginbtn {
-      width: 100%;
-      height: 60px;
-      border-radius: 50px;
-      border: 1px solid;
-      padding-left: 20px;
-      font-size: 18px;
-    }
-    .loginbtn {
-      margin-top: 10px;
-      font-family: inherit;
-      background-color: rgb(3, 195, 6);
-      padding-left: 0;
-      color: #fff;
-    }
-
-    .close {
-      position: absolute;
-      top: 40px;
-      left: 20px;
-    }
-    .close i {
-      font-size: 35px;
-      color: rgb(3, 195, 6);
-    }
-    .home {
-      display: flex;
-    }
-     .show_list {
-      display: flex;
-    }
-    .hide_list {
-      display: none;
-    }
-  </style>
   <body>
     <div class="loginpage">
       <div class="close">
@@ -157,7 +53,11 @@
               <i class="fa-solid fa-sun" style="color: #ffffff"></i>
             </div>
             <div class="bar">
-              <i class="fa-solid fa-bars" style="color: #ffffff"></i>
+              <i class="fa-solid fa-bars hampress" style="color: #ffffff"></i>
+              <i
+                class="fa-solid fa-xmark hamrelease"
+                style="color: #ffffff"
+              ></i>
             </div>
           </div>
         </div>
@@ -165,6 +65,26 @@
           <input type="text" placeholder="Search Staffs" class="search" />
         </div>
       </header>
+      <div class="hampage">
+        <div class="hod_details">
+          <h2 style="text-align: center; margin: 15px">Department of ECE</h2>
+          <div class="profile__ animate-Img">
+            <div class="dp__">
+              <img src="images/hod.png" alt="" />
+            </div>
+
+            <div class="details__">
+              <h2 class="faculty__name_">Mr Sabeenian R.S (HOD)</h2>
+              <p class="faculty__details_">sabeenian@sonatech.ac.in</p>
+              <p class="faculty__details_"></p>
+              <p class="faculty__details_">3rd floor</p>
+              <a href="https://www.sonatech.ac.in/"
+                ><button>Visit Website</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="facultys__list"></div>
       <div class="next__page"></div>
     </div>
@@ -172,10 +92,10 @@
     <script type="module" src="./index.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        console.log(localStorage.getItem('password'))
-        if(localStorage.getItem('password') =='Sona'){
+        console.log(localStorage.getItem("password"));
+        if (localStorage.getItem("password") == "Sona") {
           document.querySelector(".loginpage").style.display = "none";
-            document.querySelector(".container").classList.remove("home");
+          document.querySelector(".container").classList.remove("home");
         }
         document.querySelector(".submit").addEventListener("click", (e) => {
           e.preventDefault();
