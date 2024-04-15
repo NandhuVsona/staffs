@@ -2,6 +2,21 @@ import results from "./100data.js";
 let root = document.querySelector(".facultys__list");
 let nextPage = document.querySelector(".next__page");
 let searchBar = document.querySelector(".search");
+let hampress = document.querySelector(".hampress");
+let hamrelease = document.querySelector(".hamrelease");
+let hampage = document.querySelector(".hampage");
+
+
+hampress.addEventListener('click',()=>{
+  hampress.style.display = 'none'
+  hamrelease.style.display = 'block'
+  hampage.style.display = 'block'
+})
+hamrelease.addEventListener('click',()=>{
+  hampress.style.display = 'block'
+  hamrelease.style.display = 'none'
+  hampage.style.display = 'none'
+})
 
 results.forEach((user) => {
   let template = `
