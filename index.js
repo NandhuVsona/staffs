@@ -126,7 +126,7 @@ profileList.forEach((faculty) => {
       let backbtn = document.querySelectorAll('.backward')
      backbtn.forEach(btn =>{
       btn.addEventListener('click',()=>{
-        root.style.display = 'block'
+        root.style.display = 'flex'
         nextPage.style.display = 'none'
       })
      })
