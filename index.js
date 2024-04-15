@@ -1,6 +1,7 @@
 import results from "./100data.js";
 let root = document.querySelector(".facultys__list");
-let nextPage = document.querySelector(".next__page")
+let nextPage = document.querySelector(".next__page");
+let searchBar = document.querySelector(".search");
 
 results.forEach((user) => {
   let template = `
@@ -21,11 +22,11 @@ let profileList = document.querySelectorAll(".profile");
 let faculty_id;
 profileList.forEach((faculty) => {
   faculty.addEventListener("click", () => {
-    root.style.display = 'none'
-    nextPage.style.display = 'block'
+    root.style.display = "none";
+    nextPage.style.display = "block";
     faculty_id = faculty.dataset["id"];
     let staff = results.find((staff) => staff.login.uuid === faculty_id);
-    
+
     nextPage.innerHTML = `
     <div class="facultys__data">
     <div class="backward gobackbtn">
@@ -123,12 +124,29 @@ profileList.forEach((faculty) => {
         </div>
        `;
 
-      let backbtn = document.querySelectorAll('.backward')
-     backbtn.forEach(btn =>{
-      btn.addEventListener('click',()=>{
-        root.style.display = 'flex'
-        nextPage.style.display = 'none'
-      })
-     })
+    let backbtn = document.querySelectorAll(".backward");
+    backbtn.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        root.style.display = "flex";
+        nextPage.style.display = "none";
+      });
+    });
   });
 });
+
+searchBar.addEventListener("input", (e) => filterData(e.target.value));
+
+function filterData(searchTerm) {
+  let profile = document.querySelectorAll(".profile");
+
+  profile.forEach((list) => {
+    console.log(list);
+    console.log(list.innerText.toLowerCase());
+    if (list.innerText.toLowerCase().includes(searchTerm.toLowerCase())) {
+      list.classList.remove("hide_list");
+      list.classList.add("show_list");
+    } else {
+      list.classList.add("hide_list");
+    }
+  });
+}
