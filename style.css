@@ -298,7 +298,7 @@ input,
   color: rgb(3, 195, 6);
 }
 .home {
-  display: flex;
+  display: none;
 }
 .show_list {
   display: flex;
